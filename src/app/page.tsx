@@ -63,6 +63,12 @@ export default function Home() {
                         >
                             Me Contacter
                         </a>
+                        <a
+                            href="/cvnew.pdf" download='cv-alex-marescaux'
+                            className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-all text-center"
+                        >
+                            Télécharger mon CV
+                        </a>
                     </div>
                 </div>
             </div>

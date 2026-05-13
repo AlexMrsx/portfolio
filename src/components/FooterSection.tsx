@@ -26,6 +26,12 @@ export function FooterSection() {
                 <p className="text-white/80 mx-auto text-2xl max-w-2xl">
                     I am always open to new opportunities and interesting collaborations. Do not hesitate to contact me to discuss your projects!
                 </p>
+                <a
+                    href="/cvnew.pdf" download='cv-alex-marescaux'
+                    className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-all text-center"
+                >
+                    Download my resume
+                </a>
             </div>
 
             <div className="flex flex-col items-center gap-6">
