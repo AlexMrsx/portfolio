@@ -1,0 +1,109 @@
+[
+    {
+        "title": "Capitalum",
+        "description": "Site Web de calcul d'intérêt composés pour vos investissements !",
+        "long": "Projet personnel réalisé seul pour approfondir mes compétences en développement web front-end. L'objectif était de créer un outil concret et utile : un calculateur d'intérêts composés permettant de simuler la croissance d'un investissement dans le temps. J'ai conçu l'intégralité de l'application, de la logique de calcul financier à l'interface utilisateur, en passant par la visualisation des données via Charts.js. Le résultat est une application web déployée et accessible, avec des graphiques interactifs illustrant l'évolution du capital selon le taux, la durée et les versements périodiques.",
+        "tags": ["Html", "CSS", "JavaScript", "Bootstrap", "Charts.Js"],
+        "github": "https://alexmrsx.github.io/Capitalum/",
+        "image": "/capitalum.png",
+        "type" : "Projet perso",
+        "equipe" : "Seul"
+    },
+    {
+        "title": "Plateforme Universitaire",
+        "description": "Application desktop Java/JavaFX permettant l'échange de ressources entre étudiants.",
+        "long": "SAÉ réalisée en binôme dans le cadre de ma formation BUT Informatique. L'objectif était de concevoir une application desktop permettant à des étudiants d'échanger des ressources pédagogiques. J'ai pris en charge l'architecture MVC, la modélisation des données et une partie significative de l'interface JavaFX. Travailler en binôme nous a imposé une organisation claire du code et une répartition rigoureuse des tâches via Git. Le projet m'a permis de consolider ma maîtrise de Java orienté objet et du pattern MVC dans un contexte applicatif réel.",
+        "tags": ["Java", "JavaFX", "Architecture MVC"],
+        "github": "https://github.com/AlexMrsx/SejourLinguistique",
+        "image": "/projetuniv.jpeg",
+        "type" : "SAE",
+        "equipe" : "Binôme"
+
+
+    },
+    {
+        "title": "Jeu de labyrinthe",
+        "description": "Jeu de réalisation de labyrinthe avec Interface Graphique. Algo de génération de labyrinthe parfait & aléatoire",
+        "long": "SAÉ réalisée en groupe de 5 étudiants. L'objectif était d'implémenter un générateur de labyrinthes parfaits et aléatoires avec une interface graphique jouable. Mon rôle a porté principalement sur l'algorithme de génération de labyrinthe (exploration récursive / fusion de cellules) et son intégration dans l'architecture MVC. Le travail en groupe de 5 a nécessité une coordination active et l'utilisation de Git pour gérer les conflits. Le résultat final est un jeu fonctionnel avec génération procédurale, résolution automatique et interface graphique JavaFX.",
+        "tags": ["Java", "JavaFX", "Architecture MVC"],
+        "github": "https://github.com/AlexMrsx/Labyrinthe",
+        "image": "/labyrinthe.png",
+        "type" : "SAE",
+        "equipe" : "Groupe de 5"
+
+
+
+    },
+    {
+        "title": "Mini Paint",
+        "description": "Développement d'un mini logiciel type 'Paint' pour apprendre le MVC",
+        "long": "TP individuel réalisé pour apprendre et appliquer le pattern MVC en Java. L'objectif pédagogique était de comprendre la séparation stricte entre modèle, vue et contrôleur à travers un projet concret : un logiciel de dessin simplifié. Seul sur le projet, j'ai conçu l'ensemble des couches : le modèle gérant l'état du dessin, la vue JavaFX, et les contrôleurs gérant les interactions utilisateur (choix d'outil, couleur, tracé). Ce projet m'a donné une compréhension solide du MVC que j'ai pu réutiliser dans des projets plus ambitieux par la suite.",
+        "tags": ["Java", "JavaFX", "Architecture MVC"],
+        "github": "https://github.com/AlexMrsx/Paint_MVC",
+        "image": "/pixelart.png",
+        "type" : "TP",
+        "equipe" : "Seul"
+
+
+    },
+    {
+        "title": "Jeu Monopoly",
+        "description": "Reproduction du jeu de société en équipe, gestion de projet via la méthode Agile.",
+        "long": "SAÉ réalisée en groupe de 5, conduite selon la méthode Agile/Scrum. L'objectif était de reproduire le jeu Monopoly en Java tout en appliquant une gestion de projet structurée : sprints, backlog, rétrospectives. Mon rôle a été double : développement des mécaniques de jeu (gestion des propriétés, des joueurs, des événements) et participation active aux cérémonies Scrum en tant que membre de l'équipe de développement. Ce projet m'a appris autant sur la coordination en équipe et la gestion du temps que sur le développement logiciel lui-même.",
+        "tags": ["Java", "Scrum/Agile", "Travail d'équipe"],
+        "github": "https://github.com/AlexMrsx/Infopoly",
+        "image": "/monopoly.png",
+        "type" : "SAE",
+        "equipe" : "Groupe de 5"
+
+
+    },
+    {
+        "title": "Azertype",
+        "description": "Une mini app web créée durant mon apprentissage du JavaScript sur OpenClassRoom",
+        "long": "Projet personnel réalisé seul lors de mon apprentissage du JavaScript via la plateforme OpenClassRooms. L'objectif était de mettre en pratique les bases du JavaScript (DOM, événements, logique de jeu) à travers une application de entraînement à la frappe au clavier. J'ai implémenté la logique de score, le système de mots aléatoires et les retours visuels en temps réel. Ce projet marque mon point d'entrée dans le développement web interactif et m'a donné envie d'aller plus loin vers des frameworks modernes.",
+        "tags": ["JavaScript", "Html", "CSS"],
+        "github": "https://github.com/AlexMrsx/AzerType",
+        "image": "/azertype.png",
+        "type" : "Projet perso",
+        "equipe" : "Seul"
+
+
+    },
+    {
+        "title": "Jeu Ludo-pédagogique",
+        "description": "Conception d'un jeu éducatif axé sur l'apprentissage par le jeu.",
+        "long": "SAÉ réalisée en binôme, centrée sur la conception d'un jeu éducatif en Java orienté objet. L'objectif était de concevoir un jeu permettant l'apprentissage par le jeu, en appliquant rigoureusement les principes de la programmation objet : héritage, polymorphisme, encapsulation. En binôme, j'ai principalement travaillé sur la modélisation des entités du jeu et la logique de progression pédagogique. Ce projet m'a aidé à consolider mes bases en POO et à réfléchir à la conception logicielle avant d'écrire la moindre ligne de code.",
+        "tags": ["Java", "Programmation Objet"],
+        "github": "https://github.com/AlexMrsx/Mauscape",
+        "image": "/ludopeda.webp",
+        "type" : "SAE",
+        "equipe" : "Binôme"
+
+
+    },
+    {
+        "title": "Déploiement d'application",
+        "description": "Mise en production de deux applications web, implémentant le standard Matrix.",
+        "long": "SAÉ réalisée en trinôme, axée sur l'administration système et la mise en production. L'objectif était de déployer deux applications web implémentant le standard Matrix (protocole de messagerie décentralisée) sur un serveur Linux virtualisé. Mon rôle a porté sur la configuration du reverse proxy Nginx, la mise en place des services Systemd et la gestion de la base de données PostgreSQL. J'ai également contribué à la configuration réseau et à la sécurisation des accès. Ce projet m'a donné une première expérience concrète du déploiement en conditions proches du réel, loin du simple environnement de développement local.",
+        "tags": ["Linux Administration", "Virtualisation", "Nginx Reverse Proxy", "PostgreSQL", "Systemd Services", "Réseaux"],
+        "github": "https://gitlab.univ-lille.fr/etu/2025-2026/s303/h-calesse-marescaux-deflou",
+        "image": "/matrix.jpeg",
+        "type" : "SAE",
+        "equipe" : "Trinôme"
+
+
+    },
+    {
+        "title": "Portfolio",
+        "description": "Mon site personnel qui me sert de CV et Portfolio numérique",
+        "long": "Projet personnel réalisé seul, servant à la fois de CV numérique et de vitrine de mes réalisations. L'objectif était de concevoir un site propre, sobre et maintenable, sans framework, en HTML/CSS/JavaScript vanilla avec des données chargées depuis un fichier JSON. J'ai géré l'intégralité du projet : design, intégration, logique de filtrage des projets et déploiement. Ce projet évolue régulièrement au fil de ma formation et reflète ma progression technique. Il me sert également de terrain d'expérimentation pour tester de nouvelles approches avant de les appliquer sur des projets plus complexes.",
+        "tags": ["CSS", "Html", "Json", "JavaScript"],
+        "github": "https://github.com/AlexMrsx/siteweb",
+        "image": "/portfolio.png",
+        "type" : "Projet perso",
+        "equipe" : "Seul"
+
+
+    }
+]

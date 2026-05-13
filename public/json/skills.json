@@ -1,0 +1,132 @@
+[
+    {
+      "name": "React",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "Skilltype": "library"
+    },
+    {
+      "name": "Next.js",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "Skilltype": "framework"
+    },
+  {
+    "name": "Tanstack",
+    "image": "https://tanstack.com/images/logos/logo-color-600.png",
+    "Skilltype": "framework"
+  },
+    {
+      "name": "TypeScript",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "Skilltype": "language"
+    },
+    {
+      "name": "Tailwind CSS",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "Skilltype": "library"
+    },
+  {
+    "name": "shadcn ui",
+    "image": "/shadcn-ui.svg",
+    "Skilltype": "library"
+  },
+    {
+      "name": "npm",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg",
+      "Skilltype": "runtime"
+    },
+  {
+    "name": "yarn",
+    "image": "/yarn.svg",
+    "Skilltype": "runtime"
+  },
+    {
+      "name": "Python",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      "Skilltype": "language"
+    },
+    {
+      "name": "PostgreSQL",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+      "Skilltype": "database"
+    },
+  {
+    "name": "SQL",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
+    "Skilltype": "language"
+  },
+    {
+      "name": "Git",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+      "Skilltype": "devOps"
+    },
+  {
+    "name": "GitHub",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    "Skilltype": "devOps"
+  },
+
+    {
+      "name": "Docker",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg",
+      "Skilltype": "devOps"
+    },
+  {
+    "name": "Podman",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/podman/podman-original.svg",
+    "Skilltype": "devOps"
+  },
+
+    {
+      "name": "Figma",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+      "Skilltype": "software"
+    },
+  {
+    "name": "Vscode",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+    "Skilltype": "software"
+  },
+  {
+    "name": "InteliJ",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg",
+    "Skilltype": "software"
+  },
+  {
+    "name": "Webstorm",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webstorm/webstorm-original.svg",
+    "Skilltype": "software"
+  },
+  {
+    "name": "Photoshop",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg",
+    "Skilltype": "software"
+  },
+    {
+      "name": "JavaScript",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "Skilltype": "language"
+    },
+  {
+    "name": "Java",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+    "Skilltype": "language"
+  },
+  {
+    "name": "C",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+    "Skilltype": "language"
+  },
+
+    {
+      "name": "CSS/SCSS",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      "Skilltype": "language"
+    },
+    {
+      "name": "HTML",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "Skilltype": "language"
+    }
+  ]
+
+
