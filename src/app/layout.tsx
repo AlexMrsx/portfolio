@@ -5,6 +5,7 @@ import "./globals.css";
 import {Navbar} from "@/components/Navbar";
 import { Toaster } from "@/components/ui/sonner"
 import {useIsMobile} from "@/components/hook/useIsMobile";
+import {FlickeringGrid} from "@/components/ui/flickering-grid";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -66,7 +67,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-
   return (
       <html
           lang="en"
@@ -76,6 +76,8 @@ export default function RootLayout({
       <body
           className="min-h-full flex flex-col text-white"
       >
+
+
 
         <Navbar />
         {children}

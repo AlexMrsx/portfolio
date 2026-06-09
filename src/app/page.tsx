@@ -18,6 +18,10 @@ import {
     DialogTrigger
 } from "@/components/ui/dialog";
 import {Video} from "lucide-react";
+import {DotPattern} from "@/components/ui/dot-pattern";
+import {FlickeringGrid} from "@/components/ui/flickering-grid";
+import {LightRays} from "@/components/ui/light-rays";
+import * as React from "react";
 
 export default function Home() {
     const isMobile = useIsMobile();
@@ -76,7 +80,18 @@ export default function Home() {
     // }
   return (
     <>
-      <Section id="hero">
+
+        {!isMobile && (
+            <FlickeringGrid
+                className="fixed inset-0 z-0 size-full w-screen h-screen"
+                squareSize={4}
+                gridGap={6}
+                color="#6B7280"
+                maxOpacity={0.2}
+                flickerChance={0.3}
+            />
+        )}
+        <Section id="hero">
         <HeroSection/>
       </Section>
 

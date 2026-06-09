@@ -8,6 +8,8 @@ import {AnimatePresence, motion} from "framer-motion";
 import {toast} from "sonner";
 import {Button} from "@/components/ui/button";
 import {CircleUser} from "lucide-react";
+import {ShimmerButton} from "@/components/ui/shimmer-button";
+import {WordRotate} from "@/components/ui/word-rotate";
 
 
 function BadgeHero(props: { children: ReactNode }) {
@@ -19,38 +21,14 @@ function BadgeHero(props: { children: ReactNode }) {
 }
 
 export function HeroSection() {
-    const [libelle, setLibelle] = useState('Alex');
-    const libelleRef = ["Alex", "a developer", "an entrepreneur"];
-
-    useEffect(() => {
-        let index = 0;
-
-        const interval = setInterval(() => {
-            index = (index + 1) % libelleRef.length;
-            setLibelle(libelleRef[index]);
-        }, 3000);
-
-        return () => clearInterval(interval);
-    }, []);
 
     return (
         <div className=" sm:max-w-1/2 mx-auto flex  flex-col items-center justify-center w-full my-80 sm:my-0 ">
             <div className="flex flex-col  gap-4 font-bold justify-center w-full text-center items-center h-full leading-none">
                 <div className="">
                     <h3 className="sm:text-[130px] text-[50px]">Hello, I&#39;m</h3>
-                    <AnimatePresence mode="wait">
-                        <motion.span
-                            key={libelle}
-                            initial={{ opacity: 0, y: -20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 20 }}
-                            transition={{ duration: 0.4 }}
-                            style={{ willChange: 'transform, opacity' }}
-                            className="sm:text-[150px] text-[40px] bg-linear-to-r from-green-300 to-green-400 bg-clip-text text-transparent"
-                        >
-                            {libelle}
-                        </motion.span>
-                    </AnimatePresence>
+                    <WordRotate className="sm:text-[140px] text-[40px] bg-linear-to-r from-green-300 to-green-400 bg-clip-text text-transparent" words={["Alex", "a developer", "an entrepreneur"]} />
+
                 </div>
 
                 <BadgeHero><CircleUser/> Intern developer</BadgeHero>

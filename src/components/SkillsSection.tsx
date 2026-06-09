@@ -15,6 +15,8 @@ import {
     SelectValue
 } from "@/components/ui/select";
 import {ScrollArea, ScrollBar} from "@/components/ui/scroll-area"
+import {LightRays} from "@/components/ui/light-rays";
+import * as React from "react";
 
 type Skill = {
     name: string,
@@ -67,9 +69,11 @@ export function SkillsSection(){
     }
 
     return (
-        <div className="flex my-40 sm:my-0 sm:p-5 sm:max-w-3/4 flex-col gap-3  w-full  items-center">
+        <div className="flex my-40 sm:my-10 sm:p-5 sm:max-w-3/4 flex-col gap-3  w-full  items-center">
+            <LightRays speed={3} count={15} blur={100} length={"20vh"}/>
+
             <div className="flex flex-col text-center gap-4">
-                <h2 className="sm:text-8xl text-6xl font-semibold">My Skills</h2>
+                <h2 className="sm:text-8xl sm:mt-10 text-6xl font-semibold">My Skills</h2>
                 <p className="text-gray-300">Here is a list of tools that I master as a developer </p>
             </div>
             <div className="sm:flex  sm:gap-2 sm:my-20">

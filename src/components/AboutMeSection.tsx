@@ -24,6 +24,7 @@ import {
     DialogTrigger
 } from "@/components/ui/dialog";
 import {Button} from "@/components/ui/button";
+import {LightRays} from "@/components/ui/light-rays";
 
 export function AboutMeSection() {
     const isMobile = useIsMobile();
