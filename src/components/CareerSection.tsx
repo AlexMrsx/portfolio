@@ -179,7 +179,7 @@ function CareerColumn({ title, items }: CareerColumnProps) {
     const isMobile = useIsMobile();
     return (
         <div className="flex flex-col gap-6 sm:max-w-1/4">
-            {isMobile &&( <div>
+            {!isMobile &&( <div>
                 <h3 className="font-semibold text-3xl">{title}</h3>
                 <hr/>
             </div>)}
