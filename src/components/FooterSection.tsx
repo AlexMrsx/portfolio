@@ -1,41 +1,43 @@
-import { Mail, Computer, Unlink2, Phone } from "lucide-react";
-import {cn} from "@/lib/utils";
+import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import * as React from "react";
-import {FaGithub, FaLinkedin} from "react-icons/fa";
-import {SiShadcnui, SiTailwindcss} from "react-icons/si";
-import {RiNextjsFill} from "react-icons/ri";
-import {CgMenuMotion} from "react-icons/cg";
-
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiShadcnui, SiTailwindcss } from "react-icons/si";
+import { CgMenuMotion } from "react-icons/cg";
+import { RiNextjsFill } from "react-icons/ri";
 
 export function FooterSection() {
     return (
-        <div className="flex flex-col items-center justify-center h-full gap-8 ">
-            <div className="relative z-0 border-4 border-white  w-70 h-70  sm:w-120 sm:h-120 rounded-full overflow-hidden">
+        <div className="flex flex-col items-center justify-center w-full max-w-full gap-8 px-4 mb-5 sm:mb-0 py-10">
+
+            <div className="relative z-0 border-4 border-white mt-10 w-48 h-48 sm:w-96 sm:h-96 md:w-[400px] md:h-[400px] rounded-full overflow-hidden shrink-0">
                 <Image
                     src="/profil.png"
                     alt="profil"
                     fill
                     className="object-cover object-center"
+                    priority
                 />
             </div>
-            <div className="text-center space-y-4">
-                <h2 className="text-8xl font-semibold bg-gradient-to-r from-green-300 to-green-400 bg-clip-text text-transparent">
+
+            <div className="text-center space-y-4 w-full max-w-2xl">
+                <h2 className="text-4xl sm:text-7xl md:text-8xl font-semibold bg-gradient-to-r from-green-300 to-green-400 bg-clip-text text-transparent break-words">
                     Ready to collaborate?
                 </h2>
-                <p className="text-white/80 mx-auto text-2xl max-w-2xl">
+                <p className="text-white/80 mx-auto text-base sm:text-2xl">
                     I am always open to new opportunities and interesting collaborations. Do not hesitate to contact me to discuss your projects!
                 </p>
                 <a
-                    href="/cvnew.pdf" download='cv-alex-marescaux'
-                    className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-all text-center"
+                    href="/cvnew.pdf"
+                    download='cv-alex-marescaux'
+                    className="inline-block w-full sm:w-auto px-6 py-3 rounded-lg bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-all text-center font-medium mt-2"
                 >
                     Download my resume
                 </a>
             </div>
 
-            <div className="flex flex-col items-center gap-6">
-                <div className="flex gap-4">
+            <div className="flex flex-col items-center gap-6 w-full">
+                <div className="sm:flex sm:w-3/4 grid grid-cols-4 justify-center gap-3 sm:gap-4 w-full">
                     <ContactButton
                         icon={Mail}
                         label="Email"
@@ -62,13 +64,11 @@ export function FooterSection() {
                     />
                 </div>
 
-                <div className="text-center text-white/60 text-lg">
+                <div className="text-center text-white/60 text-base sm:text-lg">
                     <p>© 2026 Alex Marescaux - Portfolio</p>
-                    <p className="text-sm mt-2 flex flex-row items-center gap-3">Developed with <RiNextjsFill/> Next.js <SiTailwindcss/> Tailwind CSS <CgMenuMotion/> Motion.dev <SiShadcnui/> Shadcn UI</p>
                 </div>
             </div>
         </div>
-
     );
 }
 
@@ -83,10 +83,10 @@ function ContactButton({ icon: Icon, label, href, color }: {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center gap-2 px-6 py-3 rounded-full border-2 border-white/20 bg-white/5 backdrop-blur-sm text-white transition-all duration-300 hover:bg-white/10 hover:scale-105 ${color}`}
+            className={`flex justify-center items-center mx-auto w-full gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full border-2 border-white/20 bg-white/5 backdrop-blur-sm text-white transition-all duration-300 hover:bg-white/10 hover:scale-105 ${color}`}
         >
-            <Icon className="w-5 h-5" />
-            <span className="font-medium">{label}</span>
+            <Icon className="w-3 h-3 shrink-0" />
+            <span className="font-medium  text-xs  sm:text-base">{label}</span>
         </a>
     );
 }

@@ -14,6 +14,7 @@ import {
     SelectTrigger,
     SelectValue
 } from "@/components/ui/select";
+import {ScrollArea, ScrollBar} from "@/components/ui/scroll-area"
 
 type Skill = {
     name: string,
@@ -66,40 +67,35 @@ export function SkillsSection(){
     }
 
     return (
-        <div className="flex p-5 max-w-1/2 flex-col  w-full h-full items-center">
+        <div className="flex my-40 sm:my-0 sm:p-5 sm:max-w-3/4 flex-col gap-3  w-full  items-center">
             <div className="flex flex-col text-center gap-4">
-                <h2 className="text-8xl font-semibold">My Skills</h2>
+                <h2 className="sm:text-8xl text-6xl font-semibold">My Skills</h2>
                 <p className="text-gray-300">Here is a list of tools that I master as a developer </p>
             </div>
-            <div className="sm:flex   sm:gap-2 my-20">
-                {isMobile ? (
-                    <Select>
-                        <SelectTrigger className="w-full max-w-48">
-                            <SelectValue placeholder="Select a fruit" />
-                        </SelectTrigger>
-                        <SelectContent>
-                            <SelectGroup>
-                                <SelectLabel>Fruits</SelectLabel>
-                                <SelectItem value="apple">Apple</SelectItem>
-                                <SelectItem value="banana">Banana</SelectItem>
-                                <SelectItem value="blueberry">Blueberry</SelectItem>
-                                <SelectItem value="grapes">Grapes</SelectItem>
-                                <SelectItem value="pineapple">Pineapple</SelectItem>
-                            </SelectGroup>
-                        </SelectContent>
-                    </Select>
-                ) : (
-                    <>
-                        {getFilterButton()}
-                    </>
-                )}
+            <div className="sm:flex  sm:gap-2 sm:my-20">
+                {!isMobile && getFilterButton()}
+            </div>
+            {isMobile ?(
 
-            </div>
-            <div className="grid sm:grid-cols-8 grid-cols-2 gap-3">
-                {filteredSkills.map((item) => (
-                    <SkillCard key={item.name} skill={item} />
-                ))}
-            </div>
+                    <ScrollArea className="border-white/40 border-2 rounded-2xl m-3 ">
+                        <div className="max-h-100 grid grid-cols-2 m-10 gap-3">
+                            {filteredSkills.map((item) => (
+                                <SkillCard key={item.name} skill={item} />
+                            ))}
+                        </div>
+                        <ScrollBar />
+
+                    </ScrollArea>
+
+
+            ):
+                <div className="grid sm:grid-cols-8 grid-cols-2 gap-3">
+                    {filteredSkills.map((item) => (
+                        <SkillCard key={item.name} skill={item} />
+                    ))}
+                </div>}
+
+
         </div>
 
 

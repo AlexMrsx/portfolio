@@ -46,7 +46,7 @@ export function AboutMeSection() {
     }
 
     return (
-        <div className="text-center  max-w-1/2 flex sm:flex-row flex-col sm:items-center sm:justify-center h-full leading-none sm:mx-auto ">
+        <div className="text-center  sm:max-w-3/4 mx-10 my-20 sm:m-0 flex sm:flex-row flex-col items-center  justify-center h-full leading-none sm:mx-auto ">
             <div className="sm:w-1/2 w-full text-left sm:mx-10 mx-4 flex flex-col gap-4 ">
                 <h1 className="sm:text-8xl text-6xl font-semibold">About Me</h1>
                 {isMobile ? (
@@ -54,12 +54,12 @@ export function AboutMeSection() {
                         <Dialog>
                             <form>
                                 <DialogTrigger asChild>
-                                    <Button variant="secondary">Qui suis je ?</Button>
+                                    <Button variant="secondary">Who am I?</Button>
                                 </DialogTrigger>
                                 <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto bg-linear-to-br from-black via-[#0d1e2c] to-[#152331] border border-white/10">
                                     {getAdjective()}
                                     <DialogClose asChild>
-                                        <Button variant="secondary">Fermer</Button>
+                                        <Button variant="secondary">Close</Button>
                                     </DialogClose>
 
                                 </DialogContent>
@@ -68,12 +68,12 @@ export function AboutMeSection() {
                         <Dialog>
                             <form>
                                 <DialogTrigger asChild>
-                                    <Button variant="secondary">Mais encore ?</Button>
+                                    <Button variant="secondary">What else ?</Button>
                                 </DialogTrigger>
                                 <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto bg-linear-to-br from-black via-[#0d1e2c] to-[#152331] border border-white/10">
                                     {getItems()}
                                     <DialogClose asChild>
-                                        <Button variant="secondary">Fermer</Button>
+                                        <Button variant="secondary">Close</Button>
                                     </DialogClose>
 
                                 </DialogContent>
@@ -89,14 +89,14 @@ export function AboutMeSection() {
                 )}
 
 
-                <p className="text-accent-foreground sm:text-3xl text-xl">I’m a computer science student learning full-stack development. I enjoy building useful, well-designed web applications and, more importantly, understanding how they work under the hood.
+                <p className="text-accent-foreground text-justify  sm:text-3xl text-xl">I’m a computer science student learning full-stack development. I enjoy building useful, well-designed web applications and, more importantly, understanding how they work under the hood.
 
                     I’ve worked on several projects and completed an internship where I used technologies like Java, React, Next.js, and PostgreSQL. I always try to write clean code, keep improving, and build projects I’m genuinely proud of.</p>
             </div>
 
             <div className="relative sm:w-1/2 w-full flex flex-col items-center justify-center h-full leading-none">
 
-                <div className="relative z-0 border-4 border-white  w-70 h-70  sm:w-120 sm:h-120 rounded-full overflow-hidden">
+                <div className="relative z-0 border-4 border-white mt-5 sm:mt-0 w-70 h-70  sm:w-120 sm:h-120 rounded-full overflow-hidden">
                     <Image
                         src="/profil.png"
                         alt="profil"

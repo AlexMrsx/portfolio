@@ -68,7 +68,7 @@ export function ProjectsSection() {
     return (
         <div className="flex p-5 max-w-2/3 flex-col  w-full h-full items-center">
             <div className="flex flex-col text-center gap-4">
-                <h2 className="bg-linear-to-r from-[#152331] to-[#4b6a82] bg-clip-text text-transparent text-8xl font-semibold">
+                <h2 className="bg-linear-to-r from-[#152331] to-[#4b6a82] bg-clip-text text-transparent sm:text-8xl text-6xl font-semibold">
                     My Projects
                 </h2>
                 <p className="text-muted-foreground">Here is a list of someone of my projects as a dev </p>
@@ -80,14 +80,14 @@ export function ProjectsSection() {
                 opts={{
                     align: "center",
                 }}
-                className="w-3/4 my-auto flex flex-col gap-4 "
+                className="sm:w-3/4 w-full my-auto flex flex-col gap-4 "
             >
-                <Field orientation="horizontal" className="w-1/2 mx-auto ">
+                <Field orientation="horizontal" className="sm:w-1/2 mx-auto mt-3 ">
                     <Input onChange={(e)=>{setActiveSearch(e.target.value)}} className="bg-linear-to-r from-black to-[#152331] h-11 " type="search" placeholder="Search..." />
                 </Field>
                 <CarouselContent>
                     {filteredProject.map((project, index) => (
-                        <CarouselItem key={index} className=" basis-1/2 lg:basis-1/3">
+                        <CarouselItem key={index} className=" ms:basis-1/2 lg:basis-1/3">
                             <ProjectCard project={project} />
                         </CarouselItem>
                     ))}

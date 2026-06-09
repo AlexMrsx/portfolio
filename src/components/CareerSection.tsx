@@ -1,5 +1,7 @@
 import * as React from "react";
 import {BriefcaseBusiness, GraduationCap, MapPin} from "lucide-react";
+import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui/accordion";
+import {useIsMobile} from "@/components/hook/useIsMobile";
 
 type TimelineItem = {
     date: string;
@@ -16,15 +18,96 @@ type CareerColumnProps = {
 }
 
 export function CareerSection() {
+    const isMobile = useIsMobile();
     return (
-        <div className="flex p-5 flex-col w-full h-full items-center">
+        <div className="flex p-5 flex-col w-full h-full items-center my-40 sm:my-0">
             <div className="flex flex-col text-center gap-4">
-                <h2 className="text-white text-8xl font-semibold">
+                <h2 className="text-white sm:text-8xl text-6xl font-semibold">
                     My Career
                 </h2>
                 <p className="text-muted-foreground">Here is my educational and professional background</p>
             </div>
-            <div className="flex flex-row my-auto gap-60 w-full justify-center">
+            {isMobile ? (<div className="flex flex-col sm:flex-row sm:my-auto items-center gap-20 sm:gap-60 w-full justify-center">
+                <Accordion
+                    type="single"
+                    collapsible
+                    defaultValue="school"
+                    className="max-w-lg" >
+                    <AccordionItem value="school">
+                        <AccordionTrigger>School Career</AccordionTrigger>
+                        <AccordionContent>
+                            <CareerColumn
+                                title="School Career"
+                                items={[
+                                    {
+                                        date: "September 2024 - Present",
+                                        title: "Bachelor's degree in Computer Science",
+                                        location: "IUT - Villeneuve d'Ascq",
+                                        description: "Currently in 2nd year",
+                                        icon: GraduationCap,
+                                        isActive: true
+                                    },
+                                    {
+                                        date: "September 2021 - July 2024",
+                                        title: "General Baccalaureate",
+                                        location: "Saint Dominique High School",
+                                        description: "Graduated with honors",
+                                        icon: GraduationCap
+                                    },
+                                    {
+                                        date: "Certifications",
+                                        title: "BAFA — Youth Work Certificate",
+                                        location: "Beuvry",
+                                        description: "Youth supervision and group activities leadership",
+                                        icon: GraduationCap
+                                    }
+                                ]}
+                            />
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="pro">
+                        <AccordionTrigger>Prefessional Career</AccordionTrigger>
+                        <AccordionContent>
+                            <CareerColumn
+                                title="Professional Career"
+                                items={[
+                                    {
+                                        date: "April 2026 - June 2026 (in progress)",
+                                        title: "Intern Developer at Tabuleo",
+                                        location: "Haubourdin",
+                                        description: "JS, HTML, CSS, React, Node.js...",
+                                        icon: BriefcaseBusiness,
+                                        isActive: true
+                                    },
+                                    {
+                                        date: "Feb 2025 - Present",
+                                        title: "Freelance — Micro-entrepreneur",
+                                        location: "Remote",
+                                        description: "Graphic design for content creators. Client management, invoicing & visual creation.",
+                                        icon: BriefcaseBusiness
+                                    },
+                                    {
+                                        date: "Summers 2024 - 2025",
+                                        title: "Youth Activity Leader",
+                                        location: "Beuvry",
+                                        description: "Supervision of young people and organisation of activities.",
+                                        icon: BriefcaseBusiness
+                                    },
+                                    {
+                                        date: "Volunteering",
+                                        title: "Volunteer — Emmaüs & Personal Assistance",
+                                        location: "Local area",
+                                        description: "Gardening, maintenance, and logistics support.",
+                                        icon: BriefcaseBusiness
+                                    }
+                                ]}
+                            />
+                        </AccordionContent>
+                    </AccordionItem>
+                </Accordion>
+
+
+            </div>) :<div className="flex flex-row my-auto gap-60 w-full justify-center">
                 <CareerColumn
                     title="School Career"
                     items={[
@@ -86,18 +169,21 @@ export function CareerSection() {
                         }
                     ]}
                 />
-            </div>
+            </div>}
+
         </div>
     )
 }
 
 function CareerColumn({ title, items }: CareerColumnProps) {
+    const isMobile = useIsMobile();
     return (
-        <div className="flex flex-col gap-6 max-w-1/4">
-            <div>
+        <div className="flex flex-col gap-6 sm:max-w-1/4">
+            {isMobile &&( <div>
                 <h3 className="font-semibold text-3xl">{title}</h3>
                 <hr/>
-            </div>
+            </div>)}
+
             <div className="flex flex-col gap-4">
                 {items.map((item, index) => (
                     <TimelineItem key={index} {...item} />

@@ -34,7 +34,7 @@ export function HeroSection() {
     }, []);
 
     return (
-        <div className=" max-w-1/2 mx-auto flex  flex-col items-center justify-center w-full ">
+        <div className=" sm:max-w-1/2 mx-auto flex  flex-col items-center justify-center w-full my-80 sm:my-0 ">
             <div className="flex flex-col  gap-4 font-bold justify-center w-full text-center items-center h-full leading-none">
                 <div className="">
                     <h3 className="sm:text-[130px] text-[50px]">Hello, I&#39;m</h3>
