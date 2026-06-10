@@ -18,7 +18,7 @@ export function Navbar() {
         <nav className="flex fixed top-0 left-0 right-0 z-50 items-center text-2xl h-20 w-full font-extralight px-6 py-1  text-white ">
 
             <div>
-                <p className="hover:scale-110 text-white duration-200 font-semibold text-4xl cursor-pointer transition-transform"><span className="bg-gradient-to-r from-green-300 to-green-400 bg-clip-text text-transparent">A</span>M.</p>
+                <p className="hover:scale-110 text-white duration-200 font-semibold text-4xl  transition-transform"><span className="bg-gradient-to-r from-green-300 to-green-400 bg-clip-text text-transparent">A</span>M.</p>
             </div>
 
             {/*<div className="absolute left-1/2 -translate-x-1/2 flex flex-row gap-5">*/}

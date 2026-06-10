@@ -69,38 +69,38 @@ export function SkillsSection(){
     }
 
     return (
-        <div className="flex my-40 sm:my-10 sm:p-5 sm:max-w-3/4 flex-col gap-3  w-full  items-center">
-            <LightRays speed={3} count={15} blur={100} length={"20vh"}/>
+    <div className="flex flex-col h-[85vh] my-20 sm:p-5 sm:max-w-3/4 gap-3 w-full">
+        <LightRays speed={3} count={15} blur={100} length={"20vh"}/>
 
-            <div className="flex flex-col text-center gap-4">
-                <h2 className="sm:text-8xl sm:mt-10 text-6xl font-semibold">My Skills</h2>
-                <p className="text-gray-300">Here is a list of tools that I master as a developer </p>
-            </div>
-            <div className="sm:flex  sm:gap-2 sm:my-20">
+        <div className="flex flex-col text-center gap-4 mt-6 shrink-0">
+            <h2 className="sm:text-7xl text-5xl font-semibold">My Skills</h2>
+            <p className="text-gray-300">Here is a list of tools that I master as a developer</p>
+            <div className="sm:flex m-auto sm:gap-2 mt-4">
                 {!isMobile && getFilterButton()}
             </div>
-            {isMobile ?(
-
-                    <ScrollArea className="border-white/40 border-2 rounded-2xl m-3 ">
-                        <div className="max-h-100 grid grid-cols-2 m-10 gap-3">
-                            {filteredSkills.map((item) => (
-                                <SkillCard key={item.name} skill={item} />
-                            ))}
-                        </div>
-                        <ScrollBar />
-
-                    </ScrollArea>
-
-
-            ):
-                <div className="grid sm:grid-cols-8 grid-cols-2 gap-3">
-                    {filteredSkills.map((item) => (
-                        <SkillCard key={item.name} skill={item} />
-                    ))}
-                </div>}
-
-
         </div>
+
+        <div className="my-auto w-full max-h-[55vh] flex flex-col justify-center">
+            {isMobile ? (
+                <ScrollArea className="h-[45vh] border-white/40 border-2 rounded-2xl m-3">
+                    <div className="grid grid-cols-2 p-5 gap-3">
+                        {filteredSkills.map((item) => (
+                            <SkillCard key={item.name} skill={item} />
+                        ))}
+                    </div>
+                    <ScrollBar />
+                </ScrollArea>
+            ) : (
+                <div className="w-full flex justify-center items-center my-auto">
+                    <div className="grid grid-cols-2 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-9 gap-4 w-full justify-center justify-items-center">
+                        {filteredSkills.map((item) => (
+                            <SkillCard key={item.name} skill={item} />
+                        ))}
+                    </div>
+                </div>
+            )}
+        </div>
+    </div>
 
 
     )
@@ -109,11 +109,9 @@ export function SkillsSection(){
 
 function SkillCard({ skill }: { skill: Skill}){
     return (
-        <div className="cursor-grabbing text-center p-5 justify-center flex flex-col items-center  gap-3 bg-white/10 text-white rounded-2xl border-2 border-gray-200/20 hover:scale-102 transition duration-200 hover:border-gray-200 hover:bg-white/20">
-
-            <Image width={70} height={70}  src={skill.image} alt={`Image of ${skill.name}`} />
-
-            {skill.name}
+        <div className="h-36 w-full text-center p-5 justify-center flex flex-col items-center gap-3 bg-white/10 text-white rounded-2xl border-2 border-gray-200/20 hover:scale-102 transition duration-200 hover:border-gray-200 hover:bg-white/20">
+            <Image width={50} height={50} src={skill.image} alt={`Image of ${skill.name}`} className="object-contain" />
+            <span className="text-sm font-medium line-clamp-2">{skill.name}</span>
         </div>
     )
 }

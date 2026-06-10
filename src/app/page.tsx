@@ -22,6 +22,8 @@ import {DotPattern} from "@/components/ui/dot-pattern";
 import {FlickeringGrid} from "@/components/ui/flickering-grid";
 import {LightRays} from "@/components/ui/light-rays";
 import * as React from "react";
+import { motion } from "framer-motion";
+import {SmoothCursor} from "@/components/ui/smooth-cursor";
 
 export default function Home() {
     const isMobile = useIsMobile();

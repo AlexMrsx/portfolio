@@ -26,6 +26,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import {Code} from "lucide-react";
+import {useIsMobile} from "@/components/hook/useIsMobile";
 
 type Project = {
         title: string
@@ -64,7 +65,7 @@ export function ProjectsSection() {
 
         setFilteredProject(filtered)
     }, [activeSearch, projects])
-
+    const isMobile = useIsMobile()
     return (
         <div className="flex p-5 max-w-2/3 flex-col  w-full h-full items-center">
             <div className="flex flex-col text-center gap-4">
@@ -80,7 +81,7 @@ export function ProjectsSection() {
                 opts={{
                     align: "center",
                 }}
-                className="sm:w-3/4 w-full my-auto flex flex-col gap-4 "
+                className="sm:w-full w-[40vh] my-auto flex flex-col gap-4 "
             >
                 <Field orientation="horizontal" className="sm:w-1/2 mx-auto mt-3 ">
                     <Input onChange={(e)=>{setActiveSearch(e.target.value)}} className="bg-linear-to-r from-black to-[#152331] h-11 " type="search" placeholder="Search..." />
@@ -105,7 +106,8 @@ export function ProjectsSection() {
 
 function ProjectCard({ project }: { project: Project }) {
     return (
-        <Card className="group relative w-full  hover:border-white transition cursor-grabbing duration-200 overflow-hidden border-3 border-white/10 bg-linear-to-br from-black via-[#0d1e2c] to-[#152331] text-white">
+        <Card className="group relative w-full  hover:border-white transition
+         duration-200 overflow-hidden border-3 border-white/10 bg-linear-to-br from-black via-[#0d1e2c] to-[#152331] text-white">
 
             <div className="relative rounded-2xl mx-2  h-48 overflow-hidden">
                 {project.image ? (
