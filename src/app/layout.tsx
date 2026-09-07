@@ -6,6 +6,7 @@ import {Navbar} from "@/components/Navbar";
 import { Toaster } from "@/components/ui/sonner"
 import {useIsMobile} from "@/components/hook/useIsMobile";
 import {FlickeringGrid} from "@/components/ui/flickering-grid";
+import {Analytics} from "@vercel/analytics/vue";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -82,6 +83,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Toaster richColors />
+        <Analytics />
+
 
       </body>
       </html>
