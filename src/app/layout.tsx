@@ -6,7 +6,7 @@ import {Navbar} from "@/components/Navbar";
 import { Toaster } from "@/components/ui/sonner"
 import {useIsMobile} from "@/components/hook/useIsMobile";
 import {FlickeringGrid} from "@/components/ui/flickering-grid";
-import {Analytics} from "@vercel/analytics/vue";
+import {Analytics} from "@vercel/analytics/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
