@@ -60,7 +60,7 @@ export function SkillsSection(){
             <Button
                 key={filter.label}
                 variant="skillFilterButton"
-                className={activeFilter === filter.label ? "bg-green-400/50 text-green-400 " : ""}
+                className={activeFilter === filter.label ? "bg-green-300/20 text-green-200 " : ""}
                 onClick={() => setActiveFilter(filter.label)}
             >
                 {filter.icon} {filter.label}

@@ -19,7 +19,7 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         skillFilterButton:
-            "bg-green-400/10 text-xl text-green-400 hover:bg-green-400/20 focus-visible:border-green-400/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
+            "bg-green-400/10 text-xl text-green-300 hover:bg-green-300/20 focus-visible:border-green-300/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         darkButton:
             "bg-[#152500] text-xl text-muted hover:bg-green-400/20 focus-visible:border-green-400/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         link: "text-primary underline-offset-4 hover:underline",

@@ -196,12 +196,12 @@ function CareerColumn({ title, items }: CareerColumnProps) {
 function TimelineItem({ date, title, location, description, icon: Icon, isActive }: TimelineItem) {
     return (
         <div className="relative flex flex-col gap-2 border-l-3 pl-4   hover:border-l-green-400 border-l-green-300" >
-            <div className="bg-green-400 rounded-full h-3 w-3 absolute -left-1.75"></div>
+            <div className="bg-green-200 rounded-full h-3 w-3 absolute -left-1.75"></div>
             {isActive && (
                 <span className="bg-green-300 rounded-full h-3.5 w-3.5 animate-ping absolute -left-2"></span>
             )}
 
-            <span className="text-l px-2 py-0.5 rounded-full border border-green-400/30 text-green-400/80 bg-green-400/5">
+            <span className="text-l px-2 py-0.5 rounded-full border border-green-300/30 text-green-300/80 bg-green-400/5">
                 {date}
             </span>
             <h3 className="font-semibold flex gap-2 items-center">

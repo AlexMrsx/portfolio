@@ -83,16 +83,7 @@ export default function Home() {
   return (
     <>
 
-        {!isMobile && (
-            <FlickeringGrid
-                className="fixed inset-0 z-0 size-full w-screen h-screen"
-                squareSize={4}
-                gridGap={6}
-                color="#6B7280"
-                maxOpacity={0.2}
-                flickerChance={0.3}
-            />
-        )}
+
         <Section id="hero">
         <HeroSection/>
       </Section>
@@ -111,7 +102,7 @@ export default function Home() {
         <Section id="career" bg={!isMobile ?"bg-gradient-to-r from-black to-[#152331]": ""}>
             <CareerSection/>
         </Section>
-        <Section id="footer" bg={!isMobile ? "border-white border-4 bg-gradient-to-r from-black to-[#152331]" : ""}>
+        <Section id="footer" bg={!isMobile ? " bg-gradient-to-r from-black to-[#152331]" : ""}>
             <FooterSection/>
         </Section>
     </>

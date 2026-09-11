@@ -8,7 +8,7 @@ import { RiNextjsFill } from "react-icons/ri";
 
 export function FooterSection() {
     return (
-        <div className="flex flex-col items-center justify-center w-full max-w-full gap-8 px-4 mb-5 sm:mb-0 py-10">
+        <div className="flex flex-col items-center justify-center w-full max-w-full gap-8  sm:mb-0 ">
 
             <div className="relative z-0 border-4 border-white mt-10 w-48 h-48 sm:w-96 sm:h-96 md:w-[400px] md:h-[400px] rounded-full overflow-hidden shrink-0">
                 <Image
@@ -21,7 +21,7 @@ export function FooterSection() {
             </div>
 
             <div className="text-center space-y-4 w-full max-w-2xl">
-                <h2 className="text-4xl sm:text-7xl md:text-8xl font-semibold bg-gradient-to-r from-green-300 to-green-400 bg-clip-text text-transparent break-words">
+                <h2 className="text-4xl sm:text-7xl md:text-8xl font-semibold bg-green-300 bg-clip-text text-transparent break-words">
                     Ready to collaborate?
                 </h2>
                 <p className="text-white/80 mx-auto text-base sm:text-2xl">
