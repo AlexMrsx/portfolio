@@ -27,7 +27,7 @@ export function HeroSection() {
 
     const isMobile = useIsMobile();
     return (
-        <div className=" sm:max-w-1/2 mx-auto flex  flex-col items-center justify-center w-full my-80 sm:my-0 ">
+        <div className=" sm:max-w-1/2 mx-auto flex h-screen   flex-col items-center justify-center w-full my-80 sm:my-0 ">
             <div className="flex flex-col  gap-4 font-bold justify-center w-full text-center items-center h-full leading-none">
                 <div className="">
                     {!isMobile && (

@@ -49,7 +49,7 @@ export function AboutMeSection() {
     }
 
     return (
-        <div className="text-center  sm:max-w-3/4 mx-10 my-20 sm:m-0 flex sm:flex-row flex-col items-center  justify-center h-full leading-none sm:mx-auto ">
+        <div className="text-center h-screen sm:max-w-3/4 mx-10 my-20 sm:m-0 flex sm:flex-row flex-col items-center  justify-center  leading-none sm:mx-auto ">
             <div className="sm:w-1/2 w-full text-left sm:mx-10 mx-4 flex flex-col gap-4 ">
                 <h1 className="sm:text-8xl text-6xl font-semibold">About Me</h1>
 
