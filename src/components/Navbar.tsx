@@ -31,12 +31,15 @@ export function Navbar() {
             {/*</div>*/}
 
             <div className="ml-auto">
+                <Link  href="https://www.visualexdev.fr">
+
                 <button
-                    onClick={()=>toast.warning("I'm creating the website, please wait...", {position: "top-center"})}
+                    // onClick={()=>toast.warning("I'm creating the website, please wait...", {position: "top-center"})}
                     className="px-3 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:text-green-400 hover:bg-green-400/20 duration-300 transition-all"
                 >
 
 My Company                </button>
+                </Link>
 
             </div>
 
