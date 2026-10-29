@@ -2,7 +2,7 @@
      {
         "title": "HessCar",
         "description": "AppWeb qui permet de calculer le coût des trajets en voitures",
-        "long": "Vous en avez marre de transporter vos amis tel un taxi ? Utilisez HessCar pour cacluler combien chacun de vos amis vous doivent pour un certain trajet. Entrez la distance, le prix de l'essence, votre consommation moyenne et obtenez un résultat dynamique !"
+        "long": "Vous en avez marre de transporter vos amis tel un taxi ? Utilisez HessCar pour cacluler combien chacun de vos amis vous doivent pour un certain trajet. Entrez la distance, le prix de l'essence, votre consommation moyenne et obtenez un résultat dynamique !",
         "tags": ["NextJs", "TypeScript", "Tailwind", "Vercel"],
         "github": "https://github.com/AlexMrsx/HessCar",
         "image": "/hesscar.png",
